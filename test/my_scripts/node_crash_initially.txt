@@ -1,0 +1,9 @@
+
+setDelay * * 2
+start Server a b c d
+setDelay a -1
+wait 1000
+commit composites/1.jpg a:1.jpg a:2.jpg b:3.jpg b:4.jpg
+restart a
+setDelay a 100
+wait 5000
